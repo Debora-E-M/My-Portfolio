@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Debora Mekonen – Portfolio</title>
+  <!--
+    This portfolio showcases Debora Mekonen’s academic background, technical skills,
+    project experience and professional affiliations. It is structured as a
+    simple, responsive website that you can edit by opening this file in a text
+    editor and replacing or adding to the content.
+  -->
+  <style>
+    /* Color palette */
+    :root {
+      --primary: #1e3a8a;       /* deep blue for technology */
+      --secondary: #c8d8e4;     /* soft blue-grey accent */
+      --background: #f6f7fb;    /* light neutral background */
+      --text: #1f2937;          /* dark text for readability */
+      --accent: #4c4c72;        /* muted purple accent for a professional tone */
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--background);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: #ffffff;
+      padding: 4rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      margin: 0.5rem 0 1rem;
+      font-size: 1.2rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      border-bottom: 2px solid transparent;
+    }
+
+    nav a:hover {
+      border-color: var(--secondary);
+    }
+
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    section h2 {
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .skill-group {
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .skill-group h3 {
+      margin-top: 0;
+      color: var(--accent);
+      font-size: 1.1rem;
+    }
+
+    .experience-entry {
+      margin-bottom: 1.5rem;
+    }
+
+    .experience-entry h3 {
+      margin: 0 0 0.25rem;
+      color: var(--accent);
+      font-size: 1.1rem;
+    }
+
+    .experience-entry h4 {
+      margin: 0 0 0.25rem;
+      color: var(--primary);
+      font-weight: normal;
+      font-size: 1rem;
+    }
+
+    .experience-entry ul {
+      list-style: disc;
+      padding-left: 1.5rem;
+    }
+
+    .affiliations-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .affiliations-list li {
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-details {
+      list-style: none;
+      padding: 0;
+    }
+
+    .contact-details li {
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      background: var(--primary);
+      color: #ffffff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Debora Mekonen</h1>
+    <p>IT Student&nbsp;|&nbsp;Cybersecurity Sub‑Plan &amp; Psychology Minor</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#affiliations">Affiliations</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I’m a senior IT student at the University of Minnesota – Twin Cities pursuing a Bachelor of Science in
+        Information Technology with a Cybersecurity sub‑plan and a Minor in Psychology. My expected graduation is
+        Spring 2027, and I’ve developed a passion for bridging technology and human behavior. I have hands‑on
+        experience coordinating projects, facilitating communication between technical and non‑technical teams and
+        supporting app development. I enjoy helping projects stay on track and thrive in roles that blend
+        organization and problem solving. My interests lie in project and product management, and I’m excited to
+        continue learning how to bring ideas to life and build solutions that solve real problems for users.
+      </p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <p><strong>University of Minnesota – Minneapolis, MN</strong></p>
+      <p>Bachelor of Science in Information Technology (Cybersecurity Sub‑Plan) with a Minor in Psychology</p>
+      <p>Expected Graduation: Spring&nbsp;2027</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects &amp; Coursework</h2>
+      <div class="experience-entry">
+        <h3><a href="project_chess.html">Chess Game – Object‑Oriented Design (Java)</a></h3>
+        <ul>
+          <li>Implemented a simplified chess game using Java, modelling pieces (king, queen, rook, bishop, knight and pawn) and board logic with classes.</li>
+          <li>Added Forsyth–Edwards Notation (FEN) parsing to initialize board positions and validate moves.</li>
+          <li>Practiced data structures and algorithms by managing piece interactions and game state.</li>
+        </ul>
+      </div>
+      <div class="experience-entry">
+        <h3><a href="project_theme_park.html">Theme Park Ticketing System – Stacks &amp; Queues (Java)</a></h3>
+        <ul>
+          <li>Developed a ticket sales and ride queue system using custom stack and queue data structures.</li>
+          <li>Created a Ticket class to store IDs and customer names and built accompanying TicketStack and RideQueue classes (tested via a driver program).</li>
+          <li>Demonstrated understanding of LIFO/FIFO operations by managing ticket sales, returns and ride boarding sequences.</li>
+        </ul>
+      </div>
+      <div class="experience-entry">
+        <h3><a href="project_arraybag.html">ArrayBag Data Structure – Generic Collections (Java)</a></h3>
+        <ul>
+          <li>Implemented a generic ArrayBag class supporting union, intersection and difference operations.</li>
+          <li>Provided additional methods to replace items, convert the bag into a set, test for subsets and determine the most frequent element.</li>
+          <li>Enhanced skills in Java generics, algorithmic efficiency and unit testing.</li>
+        </ul>
+      </div>
+      <div class="experience-entry">
+        <h3><a href="project_client_management.html">Client Management Tool – Case Management Organizer (Python)</a></h3>
+        <ul>
+          <li>Created a simple command‑line application to manage housing stabilization clients using Python lists and dictionaries.</li>
+          <li>Supports adding clients, updating notes, assigning tasks and listing existing clients; improves organization and follow‑up for case managers.</li>
+          <li>Project demonstrates problem‑solving skills and practical application of data structures for real‑world workflows.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Professional</h3>
+          <ul>
+            <li>Project Coordination</li>
+            <li>Cross‑Functional Communication</li>
+            <li>Market Research &amp; User Support</li>
+            <li>Time Management &amp; Team Collaboration</li>
+            <li>Problem Solving &amp; Technical Documentation</li>
+            <li>Team Leadership &amp; Customer Experience</li>
+            <li>Interpersonal Communication</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Technical</h3>
+          <ul>
+            <li>Python, C Programming, R Studio</li>
+            <li>Data Security Best Practices</li>
+            <li>Data Structures &amp; Algorithms</li>
+            <li>Remote Communication &amp; Collaboration Tools</li>
+            <li>Supply Management &amp; Code Development</li>
+            <li>Microsoft Excel &amp; Canva</li>
+            <li>Operating Systems &amp; Web Infrastructure (AWS: EC2, S3, IAM)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="experience-entry">
+        <h3>Project Manager Intern – Kabba Transportation</h3>
+        <h4>Remote | May&nbsp;2024&nbsp;–&nbsp;Sept&nbsp;2024</h4>
+        <ul>
+          <li>Facilitated communication between executive and technical teams, ensuring alignment on 100% of project milestones.</li>
+          <li>Assisted in tracking technical team progress on app feature development to improve mass transit accessibility for individuals with disabilities.</li>
+          <li>Reported project updates and technical progress to the executive team, ensuring transparency and informed decision‑making.</li>
+          <li>Supported efforts to integrate new features into the app by streamlining communication and tracking milestones.</li>
+        </ul>
+      </div>
+
+      <div class="experience-entry">
+        <h3>Housing Stabilization Case Manager – Everest Healthcare Services</h3>
+        <h4>Bloomington, MN | May 2025 – Aug 2025</h4>
+        <ul>
+          <li>Conducted client intakes and enrollment activities, completed housing needs assessments and prepared case notes according to DHS requirements.</li>
+          <li>Researched and secured housing options for clients, coordinated with landlords and assisted clients with rental assistance and benefit applications.</li>
+          <li>Maintained ongoing communication, advocacy and follow‑up with clients to ensure program compliance and successful housing outcomes.</li>
+          <li>Supported clients through every stage of the housing stabilization process—conducting intake screenings, assisting with documentation and coordinating move‑in logistics—as outlined in housing case manager duties【253350909131282†L75-L96】.</li>
+        </ul>
+      </div>
+      <div class="experience-entry">
+        <h3>Hospitality Specialist – University of Minnesota</h3>
+        <h4>Minneapolis, MN | May&nbsp;2024&nbsp;–&nbsp;Aug&nbsp;2024</h4>
+        <ul>
+          <li>Provided customer support and IT‑related assistance to residents and guests, ensuring efficient operations.</li>
+          <li>Coordinated with teams to provide technical support for meetings and events, contributing to smooth technical operations.</li>
+          <li>Supported summer guest programs for Conference &amp; Event Services (CES).</li>
+        </ul>
+      </div>
+      <div class="experience-entry">
+        <h3>Event Coordinator – Black Motivated Women</h3>
+        <h4>University of Minnesota | Aug&nbsp;2023&nbsp;–&nbsp;May&nbsp;2024</h4>
+        <ul>
+          <li>Led multiple projects empowering women of color on campus, managing teams and coordinating logistics.</li>
+          <li>Fostered collaboration and ensured smooth execution of events while maintaining financial feasibility.</li>
+          <li>Strengthened project leadership and communication skills through real‑world event planning.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="affiliations">
+      <h2>Professional Affiliations</h2>
+      <ul class="affiliations-list">
+        <li>National Society of Black Engineers – Member (Jan&nbsp;2024&nbsp;–&nbsp;Present)</li>
+        <li>Society of Women Engineers – Member (Jan&nbsp;2024&nbsp;–&nbsp;Present)</li>
+        <li>Social Coding – Member (Jan&nbsp;2024&nbsp;–&nbsp;Present)</li>
+        <li>ColorStack – Member (Sept&nbsp;2024&nbsp;–&nbsp;Present)</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        Please feel free to reach out via email or LinkedIn. (Phone number is provided for professional inquiries; you can remove it if you prefer to keep it private.)
+      </p>
+      <ul class="contact-details">
+        <li>Email: <a href="mailto:mekon044@umn.edu">mekon044@umn.edu</a></li>
+        <li>Phone: <a href="tel:+14045877926">404‑587‑7926</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/debora-mekonen" target="_blank">linkedin.com/in/debora-mekonen</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Debora Mekonen. All rights reserved.</p>
+  </footer>
+</body>
+</html>
